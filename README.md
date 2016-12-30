@@ -1,24 +1,12 @@
-# Identicon
+# Identicon-elixir
 
-**TODO: Add description**
+** Not production ready **
+The identicon module provides the possibility to generate an identicon for a given name
 
-## Installation
+## How to use
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+The Identicon module provides a function called main. This function can be called with 1 parameter, which will be the input to generate the identicon and the filename.
 
-  1. Add `identicon` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:identicon, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `identicon` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:identicon]]
-    end
-    ```
-
+```elixir
+  Identicon.main("input")
+```
